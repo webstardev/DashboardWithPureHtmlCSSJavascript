@@ -16,6 +16,12 @@ body {
   padding: 0;
 }
 
+/* shared classes start */
+.no-border {
+  border: none !important;
+}
+/* shared classes end */
+
 /* typography styles start */
 h4 {
   font-family: "Inter", sans-serif;
@@ -316,4 +322,12 @@ h4 {
   margin-bottom: 11px;
 }
 
+.control-panel .control-panel-item .filter-checkbox:last-child {
+  margin-bottom: 0;
+}
+
+.control-panel .btn-update-filter {
+  width: 100%;
+  margin: 0;
+}
 /* main container styled end */
