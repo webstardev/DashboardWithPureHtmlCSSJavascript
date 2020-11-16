@@ -20,67 +20,229 @@
   </head>
 
   <body>
-    <!-- header start -->
-    <div class="header">
-      <div class="header-container">
-        <a href="#" class="logo">LOGO</a>
+    <div class="site-container">
+      <!-- header start -->
+      <div class="header">
+        <div class="header-container">
+          <a href="#" class="logo">LOGO</a>
 
-        <div class="profile-div">
-          <div class="profile-img">
-            <img src="assets/img/profile.jpg" alt="Profile" />
+          <div class="profile-div">
+            <div class="profile-img">
+              <img src="assets/img/profile.jpg" alt="Profile" />
+            </div>
+            <div class="profile-info">
+              <p class="user-name">Leo Baroch</p>
+              <p class="user-type">Sale Agent</p>
+            </div>
           </div>
-          <div class="profile-info">
-            <p class="user-name">Leo Baroch</p>
-            <p class="user-type">Sale Agent</p>
-          </div>
-        </div>
 
-        <div class="control-btns">
-          <button class="btn-control btn-dashboard"></button>
-          <button class="btn-control btn-settings"></button>
-          <button class="btn-control btn-support"></button>
+          <div class="control-btns">
+            <button class="btn-control btn-dashboard"></button>
+            <button class="btn-control btn-settings"></button>
+            <button class="btn-control btn-support"></button>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- header end -->
-    <div class="main-container">
-      <div class="control-panel">
-        <div class="back-btn-div">
-          <button class="cs-btn-primary btn-back">Dashboard</button>
+      <!-- header end -->
+      <div class="main-container">
+        <!-- left filter panel -->
+        <div class="control-panel">
+          <div class="back-btn-div">
+            <button class="cs-btn-primary btn-back">Dashboard</button>
+          </div>
+          <div class="control-panel-item">
+            <div class="partner-select">Partner</div>
+          </div>
+          <div class="control-panel-item">
+            <h4 class="item-title">Incident date</h4>
+            <div class="date-selector">Select a date</div>
+          </div>
+          <div class="control-panel-item no-border">
+            <h4 class="item-title">Coverage & Benefits</h4>
+            <div class="filter-list">
+              <label class="checkbox filter-checkbox">
+                <input type="checkbox" />
+                <span>Critical Illness</span>
+              </label>
+              <label class="checkbox filter-checkbox">
+                <input type="checkbox" />
+                <span>Death</span>
+              </label>
+              <label class="checkbox filter-checkbox">
+                <input type="checkbox" />
+                <span>Disability Income</span>
+              </label>
+              <label class="checkbox filter-checkbox">
+                <input type="checkbox" />
+                <span>Terminal Illness</span>
+              </label>
+              <label class="checkbox filter-checkbox">
+                <input type="checkbox" />
+                <span>TDP</span>
+              </label>
+            </div>
+          </div>
+          <button class="cs-btn-primary btn-update-filter">
+            Update filter
+          </button>
         </div>
-        <div class="control-panel-item">
-          <div class="partner-select">Partner</div>
-        </div>
-        <div class="control-panel-item">
-          <h4 class="item-title">Incident date</h4>
-          <div class="date-selector">Select a date</div>
-        </div>
-        <div class="control-panel-item no-border">
-          <h4 class="item-title">Coverage & Benefits</h4>
-          <div class="filter-list">
-            <label class="checkbox filter-checkbox">
-              <input type="checkbox" />
-              <span>Critical Illness</span>
-            </label>
-            <label class="checkbox filter-checkbox">
-              <input type="checkbox" />
-              <span>Death</span>
-            </label>
-            <label class="checkbox filter-checkbox">
-              <input type="checkbox" />
-              <span>Disability Income</span>
-            </label>
-            <label class="checkbox filter-checkbox">
-              <input type="checkbox" />
-              <span>Terminal Illness</span>
-            </label>
-            <label class="checkbox filter-checkbox">
-              <input type="checkbox" />
-              <span>TDP</span>
-            </label>
+
+        <!-- main panel -->
+        <div class="main-panel">
+          <div class="main-panel-header">
+            <h2 class="main-panel-title">Search results</h2>
+            <div class="selected-search-value">
+              <h3 class="selected-date-name">Jan 1980; Smith</h3>
+              <h3 class="item-counts">167 items</h3>
+            </div>
+            <div class="sort-by-div">
+              <label>Sort by</label>
+              <div>Latest Update</div>
+            </div>
+          </div>
+
+          <div class="search-list-container">
+            <div class="list-item">
+              <div class="status-icon-div"></div>
+
+              <div class="value-div policy-value">
+                <label>Policy verion date - 31 Jan 2018</label>
+                <h3>1234 5670 9101</h3>
+              </div>
+
+              <div class="value-div name-value">
+                <label>Name</label>
+                <h3>Ashley Smith</h3>
+              </div>
+
+              <div class="value-div date-value">
+                <label>Date of Birth</label>
+                <h3>11 Sept 1983</h3>
+              </div>
+
+              <div class="value-div benefit-value">
+                <label>Benefit cover</label>
+                <h3>Death & Terminal Illness.</h3>
+              </div>
+
+              <button class="cs-btn-outline-primary btn-claim">
+                Create Claim
+              </button>
+            </div>
+
+            <div class="list-item">
+              <div class="status-icon-div"></div>
+
+              <div class="value-div policy-value">
+                <label>Policy verion date - 31 Jan 2018</label>
+                <h3>1234 5670 9101</h3>
+              </div>
+
+              <div class="value-div name-value">
+                <label>Name</label>
+                <h3>Ashley Smith</h3>
+              </div>
+
+              <div class="value-div date-value">
+                <label>Date of Birth</label>
+                <h3>11 Sept 1983</h3>
+              </div>
+
+              <div class="value-div benefit-value">
+                <label>Benefit cover</label>
+                <h3>Death & Terminal Illness.</h3>
+              </div>
+
+              <button class="cs-btn-outline-primary btn-claim">
+                Create Claim
+              </button>
+            </div>
+
+            <div class="list-item">
+              <div class="status-icon-div"></div>
+
+              <div class="value-div policy-value">
+                <label>Policy verion date - 31 Jan 2018</label>
+                <h3>1234 5670 9101</h3>
+              </div>
+
+              <div class="value-div name-value">
+                <label>Name</label>
+                <h3>Ashley Smith</h3>
+              </div>
+
+              <div class="value-div date-value">
+                <label>Date of Birth</label>
+                <h3>11 Sept 1983</h3>
+              </div>
+
+              <div class="value-div benefit-value">
+                <label>Benefit cover</label>
+                <h3>Death & Terminal Illness.</h3>
+              </div>
+
+              <button class="cs-btn-outline-primary btn-claim">
+                Create Claim
+              </button>
+            </div>
+
+            <div class="list-item">
+              <div class="status-icon-div"></div>
+
+              <div class="value-div policy-value">
+                <label>Policy verion date - 31 Jan 2018</label>
+                <h3>1234 5670 9101</h3>
+              </div>
+
+              <div class="value-div name-value">
+                <label>Name</label>
+                <h3>Ashley Smith</h3>
+              </div>
+
+              <div class="value-div date-value">
+                <label>Date of Birth</label>
+                <h3>11 Sept 1983</h3>
+              </div>
+
+              <div class="value-div benefit-value">
+                <label>Benefit cover</label>
+                <h3>Death & Terminal Illness.</h3>
+              </div>
+
+              <button class="cs-btn-outline-primary btn-claim">
+                Create Claim
+              </button>
+            </div>
+
+            <div class="list-item">
+              <div class="status-icon-div"></div>
+
+              <div class="value-div policy-value">
+                <label>Policy verion date - 31 Jan 2018</label>
+                <h3>1234 5670 9101</h3>
+              </div>
+
+              <div class="value-div name-value">
+                <label>Name</label>
+                <h3>Ashley Smith</h3>
+              </div>
+
+              <div class="value-div date-value">
+                <label>Date of Birth</label>
+                <h3>11 Sept 1983</h3>
+              </div>
+
+              <div class="value-div benefit-value">
+                <label>Benefit cover</label>
+                <h3>Death & Terminal Illness.</h3>
+              </div>
+
+              <button class="cs-btn-outline-primary btn-claim">
+                Create Claim
+              </button>
+            </div>
           </div>
         </div>
-        <button class="cs-btn-primary btn-update-filter">Update filter</button>
       </div>
     </div>
   </body>

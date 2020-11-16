@@ -1,6 +1,9 @@
 /* 
 font-family: 'Roboto', sans-serif; 
 */
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 14px;
@@ -23,6 +26,30 @@ body {
 /* shared classes end */
 
 /* typography styles start */
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.55;
+  letter-spacing: -0.18px;
+  color: #313133;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
+  color: #313133;
+  margin: 0;
+}
+
 h4 {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -73,7 +100,7 @@ h4 {
   border-radius: 4px;
   border: solid 2px #3d7786;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -81,6 +108,12 @@ h4 {
   text-align: center;
   color: #3d7786;
   height: 39px;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  outline: none;
 }
 
 .cs-btn-outline-primary:hover,
@@ -152,9 +185,18 @@ h4 {
 
 /* input checkbox styled end */
 
+.site-container {
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+}
+
 /* header styled end */
 .header {
   position: relative;
+  border-bottom: 1px solid #d4d5d7;
+  padding: 0 86px;
 }
 
 .header .header-container {
@@ -162,8 +204,6 @@ h4 {
   display: flex;
   align-items: center;
   padding: 12px 24px 12px 39px;
-  border-bottom: 1px solid #d4d5d7;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -330,4 +370,143 @@ h4 {
   width: 100%;
   margin: 0;
 }
+/* control panel styles end */
+
+/* main panel styles start */
+.main-panel {
+  margin: 0 0 0 48px;
+  flex: 1 1 100%;
+}
+
+.main-panel .main-panel-header {
+  padding: 39px 0 24px;
+  border-bottom: 2px solid #d4d5d7;
+  display: flex;
+  align-items: center;
+}
+
+.main-panel .main-panel-header .main-panel-title {
+}
+
+.main-panel-header .selected-search-value {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 21px;
+}
+
+.main-panel-header .selected-search-value .selected-date {
+  font-weight: normal;
+}
+
+.main-panel-header .selected-search-value .selected-name {
+  font-weight: normal;
+}
+
+.main-panel-header .selected-search-value .item-counts {
+  color: #313133;
+  font-weight: normal;
+  margin: 0 0 0 24px;
+}
+
+.main-panel-header .sort-by-div {
+  margin: 0 0 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.main-panel-header .sort-by-div label {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: -0.1px;
+  color: #313133;
+  margin: 0 18px 0 0;
+}
+
+.main-panel-header .sort-by-div h3 {
+  font-weight: normal;
+}
+
+/* search list container styles start */
+.search-list-container {
+  padding: 24px 0;
+  border-bottom: 2px solid #e3e3e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.search-list-container .list-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px 20px 10px;
+}
+
+.search-list-container .list-item:nth-child(2n) {
+  background-color: #f7f8fa;
+}
+
+.search-list-container .list-item .status-icon-div {
+  width: 39px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #e3e3e6;
+  padding: 3px 4px;
+  flex: 0 0 39px;
+}
+
+.search-list-container .list-item .value-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-list-container .list-item .value-div label {
+  margin: 0 0 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: #454547;
+}
+
+.search-list-container .list-item .value-div .value {
+  font-weight: normal;
+}
+
+.search-list-container .list-item .value-div.policy-value {
+  margin: 0 0 0 13px;
+  flex: 0 0 220px;
+}
+
+.search-list-container .list-item .value-div.name-value {
+  margin: 0 0 0 16px;
+  flex: 0 0 160px;
+}
+
+.search-list-container .list-item .value-div.date-value {
+  margin: 0 0 0 24px;
+  flex: 0 0 127px;
+}
+
+.search-list-container .list-item .value-div.benefit-value {
+  margin: 0 0 0 24px;
+}
+
+.search-list-container .list-item .btn-claim {
+  margin: 0 0 0 auto;
+}
+/* search list styles end */
+
+/* main panel styles end */
+
 /* main container styled end */
