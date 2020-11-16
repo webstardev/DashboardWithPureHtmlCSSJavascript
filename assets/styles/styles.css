@@ -97,8 +97,15 @@ h4 {
 }
 
 .checkbox > span {
-  color: #34495e;
-  padding: 0.5rem 0.25rem;
+  color: #313133;
+  padding: 0.5rem 0 0 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: -0.1px;
 }
 
 .checkbox > input {
@@ -129,6 +136,8 @@ h4 {
   position: absolute;
   left: 0.7rem;
   top: 0.2rem;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .checkbox > input:active {
@@ -301,6 +310,10 @@ h4 {
 
 .control-panel .control-panel-item .item-title {
   margin: 0 0 16px 0;
+}
+
+.control-panel .control-panel-item .filter-checkbox {
+  margin-bottom: 11px;
 }
 
 /* main container styled end */
